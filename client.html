@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fortune Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background: linear-gradient(to right, #29003f, #130025);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.top-bar .left i,
+.top-bar .right i {
+  margin-right: 8px;
+}
+
+.top-bar .right i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .logo img {
+  height: 40px;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2b003f;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #6200ea;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar nav a {
+    margin: 10px 8px;
+    font-size: 14px;
+  }
+
+  
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left">
+      <i class="fas fa-location-arrow"></i> 040-35636585, +919392082054
+    </div>
+    <div class="right">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-f"></i>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Fortune Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="#">Opportunities</a>
+      <a href="joinus.html">Join Us</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+<section class="client">
+
+
+  <section class="client-section">
+    <h2>Our Top Banking & insurance Clients</h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide"><img src="images/aubank.jpg" alt="aubank Bank"></div>
+          <div class="carousel-slide"><img src="images/HDFC.jpg" alt="HDFC Bank"></div>
+          <div class="carousel-slide"><img src="images/indusind-bank.png" alt="IndusInd Bank"></div>
+          <div class="carousel-slide"><img src="images/icic.jpg" alt="icic Bank"></div>
+        </div>
+        <div class="carousel-nav">
+          <button onclick="moveSlide(-1)">&#10094;</button>
+          <button onclick="moveSlide(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- <section class="client-section">
+    <h2>Our Entertainment & Google Client</h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide"><img src="images/google360.png" alt="google360 "></div>
+          <div class="carousel-slide"><img src="images/sonyliv.jpeg" alt="sonyliv Bank"></div>
+          <div class="carousel-slide"><img src="images/google360.png" alt="google360 "></div>
+          <div class="carousel-slide"><img src="images/sonyliv.jpeg" alt="sonyliv "></div>
+        </div>
+        <div class="carousel-nav">
+          <button onclick="moveSlide(-1)">&#10094;</button>
+          <button onclick="moveSlide(1)">&#10095;</button>
+        </div>
+      </div>
+    </div> -->
+  </section>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col company">
+      <h4>FORTUNE GLOBAL ORGANISATION</h4>
+      <p>
+        Aspiring to become something is a natural instinct all of you have but it takes the right environment and the association to make that dream become a reality.
+      </p>
+    </div>
+
+    <div class="footer-col contact">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 2nd floor (Entry from cellar), Above Woodland Showroom, Metro pillar: C1363, Prakash Nagar, Begumpet, Hyderabad, Telangana 500016</p>
+      <p><strong>Phone:</strong> +91 9392082054, 040 35636585</p>
+      <p><strong>Email:</strong> <a href="mailto:hr@fortuneglobalorganisation.com">hr@fortuneglobalorganisation.com</a></p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fortune Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background: linear-gradient(to right, #29003f, #130025);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.top-bar .left i,
+.top-bar .right i {
+  margin-right: 8px;
+}
+
+.top-bar .right i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .logo img {
+  height: 40px;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2b003f;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #6200ea;
+}
+.gallery-section {
+  background-color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  color: #ff6600;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.gallery-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 14); /* 7 visible images x 2 loops */
+  animation: scroll 30s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  flex-shrink: 0;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide {
+    width: 200px;
+  }
+
+  .gallery-title {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar nav a {
+    margin: 10px 8px;
+    font-size: 14px;
+  }
+
+  
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left">
+      <i class="fas fa-location-arrow"></i> 040-35636585, +919392082054
+    </div>
+    <div class="right">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-f"></i>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Fortune Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="#">Opportunities</a>
+      <a href="joinus.html">Join Us</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+    <!-- Join Section -->
+     
+<section class="gallery-section">
+  <h2 class="gallery-title">Gallery</h2>
+  <div class="gallery-slider">
+    <div class="slide-track">
+      <div class="slide"><img src="images/g1.jpeg" alt="Gallery Image 1" /></div>
+      <div class="slide"><img src="images/g2.jpeg" alt="Gallery Image 2" /></div>
+      <div class="slide"><img src="images/g3.jpeg" alt="Gallery Image 3" /></div>
+      <div class="slide"><img src="images/g4.jpeg" alt="Gallery Image 4" /></div>
+      <div class="slide"><img src="images/g5.jpg" alt="Gallery Image 5" /></div>
+      <div class="slide"><img src="images/g6.jpg" alt="Gallery Image 6" /></div>
+      <!-- Repeat for infinite loop effect -->
+      <div class="slide"><img src="images/g7.jpg" alt="Gallery Image 1" /></div>
+      <div class="slide"><img src="images/g8.jpg" alt="Gallery Image 2" /></div>
+    </div>
+  </div>
+</section>
+
+  
+
+
+</body>
+</html>
+
+
